@@ -1,0 +1,23 @@
+{%extends 'base.html'%}
+{% block title %}-중식{% endblock %}
+
+{%block header%}
+<div style="height: 100px;"></div>
+{% endblock %}
+
+{%block contents%}
+<div class="container">
+    <h2>중식</h2>
+    
+    <div class="row">
+        {% for China in China_list %}
+        <div class="col col-sm-3">
+            <img src="{{China.photo.url}}" class="img-thumbnail" alt="">
+            <p class="text-center">{{China.title}}</p>
+            <!--{{China.desc}} <br> <br>-->
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,23 @@
+{%extends 'base.html'%}
+{% block title %}-한식{% endblock %}
+
+{%block header%}
+<div style="height: 100px;"></div>
+{% endblock %}
+
+{%block contents%}
+<div class="container">
+    <h2>한식</h2>
+    
+    <div class="row">
+        {% for Korean in Korean_list %}
+        <div class="col col-sm-3">
+            <img src="{{Korean.photo.url}}" class="img-thumbnail" alt="">
+            <p class="text-center">{{Korean.title}}</p>
+            <!--{{Korean.desc}} <br> <br>-->
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}
