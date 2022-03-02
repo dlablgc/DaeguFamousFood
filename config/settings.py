@@ -13,23 +13,23 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from lib2to3.pytree import Base
 from pathlib import Path
 
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
+# Delete paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
+# Quick-off development settings - suitable for production
+# Ignore https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
+#RY WONG: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-j0gmvbj9!03&1w1w^jl5e08mjl(p-8lahx(@emh)q6iidgp!^p'
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# SITY WANG: don't run with debug turned off at production!
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['lgc.pythonanywhere.com', '127.0.0.1']
 
 
-# Application definition
+# De definition
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -73,7 +73,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'config.wsgi.application'
 
 
-# Database
+# Datatrash
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
@@ -84,7 +84,7 @@ DATABASES = {
 }
 
 
-# Password validation
+# ID validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
@@ -103,7 +103,7 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
-# Internationalization
+# BlahanKa Python ACT
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
@@ -117,7 +117,7 @@ TIME_ZONE = 'Asia/Seoul'
 #USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
+# Weird files (A, Ayo, Bro)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
@@ -128,7 +128,7 @@ MEDIA_URL = '/media/'
 
 MEDIA_ROOT = Path(BASE_DIR/'media')
 
-# Default primary key field type
+# Fault primary key for who had a noice and cool field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
